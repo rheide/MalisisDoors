@@ -161,9 +161,17 @@ public final class FactoryClientVerification {
           Path.of(output, "item-client.txt"),
           "PASS all 49 original creative items present; native three-dimensional item rendering"
               + " exercised\n");
+      SurfaceClientVerification.verify(mc, output);
+      mc.player.connection.sendCommand("malisisverifyview surfaces");
       stage = 11;
+      wait = 0;
+      return false;
+    }
+    if (stage == 11) {
+      shot(mc, output, "garage-window-transparency.png");
+      stage = 12;
       return true;
     }
-    return stage == 11;
+    return stage == 12;
   }
 }

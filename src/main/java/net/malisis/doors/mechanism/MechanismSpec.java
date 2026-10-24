@@ -10,6 +10,14 @@ public record MechanismSpec(
     String texture,
     String model,
     int ticks) {
+  /** Legacy DirectionalComponent.PLACER, unlike native DoorItem placement. */
+  public boolean usesPlacerFacing() {
+    return switch (kind) {
+      case GARAGE, LARGE, CARRIAGE, MEDIEVAL, HITECH -> true;
+      default -> false;
+    };
+  }
+
   public enum Kind {
     GARAGE,
     LARGE,

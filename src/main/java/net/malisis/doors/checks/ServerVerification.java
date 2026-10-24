@@ -304,6 +304,7 @@ public final class ServerVerification {
       FieldVerification.run(level);
       RecipeVerification.run(level);
       LifecycleVerification.run(level);
+      SurfaceVerification.run(level);
       Files.createDirectories(Path.of(System.getProperty("malisis.verify.out")));
       Files.writeString(
           Path.of(System.getProperty("malisis.verify.out"), "server-verification.txt"),
@@ -345,7 +346,10 @@ public final class ServerVerification {
                               var view =
                                   com.mojang.brigadier.arguments.StringArgumentType.getString(
                                       context, "view");
-                              if (view.equals("field"))
+                              if (view.equals("surfaces")) {
+                                player.setGameMode(GameType.SPECTATOR);
+                                player.connection.teleport(901.5, 64.88, -4, 0, 0);
+                              } else if (view.equals("field"))
                                 player.connection.teleport(344, 79, -10, 0, 35);
                               else if (view.equals("vanilla"))
                                 player.connection.teleport(270, 84, -12, 0, 35);

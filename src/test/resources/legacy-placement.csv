@@ -1,0 +1,9 @@
+yaw,sneak,facing
+0,false,north
+0,true,south
+90,false,east
+90,true,west
+180,false,south
+180,true,north
+270,false,west
+270,true,east

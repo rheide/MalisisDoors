@@ -95,7 +95,7 @@ Native doors, hatches, curtains, custom Door Factory and forcefields, with cache
 [[dependencies.malisisdoors]]
 modId="malisiscore"
 type="required"
-versionRange="[8.0.0,)"
+versionRange="[8.0.1,)"
 ordering="AFTER"
 side="BOTH"
 

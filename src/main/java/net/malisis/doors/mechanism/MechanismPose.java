@@ -7,6 +7,10 @@ import org.joml.Vector3f;
 
 /** Common transforms: rendering, selection and physical collision use the same pose. */
 public final class MechanismPose {
+  public static Direction placementFacing(Direction player, boolean sneaking) {
+    return sneaking ? player : player.getOpposite();
+  }
+
   public static Matrix4f facing(Matrix4f matrix, Direction facing) {
     return matrix
         .identity()

@@ -1,6 +1,6 @@
 # MalisisDoors 9 - Minecraft 1.21.1
 
-Native NeoForge port of MalisisDoors, with all 49 original creative items restored. Install both `malisisdoors-1.21.1-9.0.0.jar` and `malisiscore-1.21.1-8.0.0.jar` on client and server, using Java 21 and NeoForge 21.1.264 or a compatible newer 21.1 build.
+Native NeoForge port of MalisisDoors, with all 49 original creative items restored. Install both `malisisdoors-1.21.1-9.0.1.jar` and `malisiscore-1.21.1-8.0.1.jar` on client and server, using Java 21 and NeoForge 21.1.264 or a compatible newer 21.1 build.
 
 The inventory includes all standard sliding, jail, shoji, laboratory and factory doors; all sixteen curtains; eight 3x3 doors; carriage and medieval doors; garage doors; the high-tech door; saloon doors; vertical and rusty hatches; six trapdoors; the camouflage gate; rusty ladder and handle; the Door Factory and custom door; and the forcefield projector.
 

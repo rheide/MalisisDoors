@@ -1,4 +1,4 @@
-# MalisisDoors 9 / MalisisCore 8 - native 1.21.1 release
+# MalisisDoors 9.0.1 / MalisisCore 8.0.1 - native 1.21.1 release
 
 The port restores all 49 original creative items on NeoForge 1.21.1. The previous 22-variant alpha was incomplete and is superseded by the final pair of JARs.
 
@@ -37,3 +37,7 @@ The native Core provides the functionality needed by this Doors implementation. 
 ## Source and Git history
 
 Doors and Core remain separate local repositories based on the public Ordinastie repositories. Each has the optimized legacy release tagged `1.12.2`. The native branches follow those performance commits and preserve subsequent port commits. No GitHub fork or push was made. Source bundles accompany the release so the complete upstream and local history can be recovered.
+
+## 9.0.1 corrections
+
+See PATCH-9.0.1.md for corrected garage/large-door placement facing, garage-window blending and front-face handle UVs. Both JARs must be updated. Existing affected doors need re-placing to apply the corrected placement rule. Patch validation passes 4,602 server checks, 96 actual placement cases, 128 front/back UV comparisons and the native client workflow; screenshot pixel sampling verifies window blending. The performance table remains the measured 9.0.0 baseline.

@@ -57,7 +57,13 @@ public final class MechanismBlock extends Block implements EntityBlock {
         && context.getClickedFace().getAxis().isVertical()) return null;
     var state =
         defaultBlockState()
-            .setValue(FACING, context.getHorizontalDirection())
+            .setValue(
+                FACING,
+                spec.usesPlacerFacing()
+                    ? MechanismPose.placementFacing(
+                        context.getHorizontalDirection(),
+                        context.getPlayer() != null && context.getPlayer().isShiftKeyDown())
+                    : context.getHorizontalDirection())
             .setValue(
                 TOP, context.getClickLocation().y - Math.floor(context.getClickLocation().y) > .5);
     if (spec.kind() == MechanismSpec.Kind.RUSTY_HATCH)

@@ -137,10 +137,7 @@ public final class DoorItems {
         part.mesh()
             .emit(
                 stack.last(),
-                buffers.getBuffer(
-                    part.name().contains("glass")
-                        ? RenderType.entityTranslucent(InventoryMenu.BLOCK_ATLAS)
-                        : RenderType.entityCutout(InventoryMenu.BLOCK_ATLAS)),
+                buffers.getBuffer(MechanismRenderer.renderType(mechanism.spec, part.name())),
                 light,
                 overlay);
         stack.popPose();

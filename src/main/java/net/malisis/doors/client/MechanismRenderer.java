@@ -36,6 +36,12 @@ public final class MechanismRenderer implements BlockEntityRenderer<MechanismEnt
         .apply(ResourceLocation.fromNamespaceAndPath("malisisdoors", "blocks/" + name));
   }
 
+  public static RenderType renderType(MechanismSpec spec, String part) {
+    return spec.kind() == MechanismSpec.Kind.GARAGE || part.contains("glass")
+        ? RenderType.entityTranslucent(InventoryMenu.BLOCK_ATLAS)
+        : RenderType.entityCutout(InventoryMenu.BLOCK_ATLAS);
+  }
+
   private static Part[] bake(Key key) {
     var spec = key.spec();
     var texture = sprite(spec.texture());
@@ -111,7 +117,7 @@ public final class MechanismRenderer implements BlockEntityRenderer<MechanismEnt
       entity.facingPose(facing);
       if (entity.spec().kind() == MechanismSpec.Kind.GARAGE) {
         int count = entity.columnHeight();
-        var buffer = buffers.getBuffer(RenderType.entityCutout(InventoryMenu.BLOCK_ATLAS));
+        var buffer = buffers.getBuffer(renderType(entity.spec(), "top"));
         for (int down = 0; down < count; down++) {
           MechanismPose.garage(pose, count, down, progress);
           total.set(facing).mul(pose);
@@ -128,10 +134,7 @@ public final class MechanismRenderer implements BlockEntityRenderer<MechanismEnt
           total.set(facing).mul(pose);
           part.mesh.emit(
               meshPose.set(stack.last(), total),
-              buffers.getBuffer(
-                  part.name.contains("glass")
-                      ? RenderType.entityTranslucent(InventoryMenu.BLOCK_ATLAS)
-                      : RenderType.entityCutout(InventoryMenu.BLOCK_ATLAS)),
+              buffers.getBuffer(renderType(entity.spec(), part.name)),
               light,
               overlay);
         }
