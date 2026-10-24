@@ -1,6 +1,6 @@
-# MalisisDoors 9 - Minecraft 1.21.1
+# MalisisDoors-compat 9.1 - Minecraft 1.21.1
 
-Native NeoForge port of MalisisDoors, with all 49 original creative items restored. Install both `malisisdoors-1.21.1-9.0.1.jar` and `malisiscore-1.21.1-8.0.1.jar` on client and server, using Java 21 and NeoForge 21.1.264 or a compatible newer 21.1 build.
+Native NeoForge port of MalisisDoors, with all 49 original creative items restored. Install both `malisisdoors-compat-1.21.1-9.1.0.jar` and `malisiscore-compat-1.21.1-8.0.1.jar` on client and server, using Java 21 and NeoForge 21.1.264 or a compatible newer 21.1 build.
 
 The inventory includes all standard sliding, jail, shoji, laboratory and factory doors; all sixteen curtains; eight 3x3 doors; carriage and medieval doors; garage doors; the high-tech door; saloon doors; vertical and rusty hatches; six trapdoors; the camouflage gate; rusty ladder and handle; the Door Factory and custom door; and the forcefield projector.
 
@@ -12,6 +12,6 @@ Moving collision and ray selection share the render transforms. Displaced leaves
 
 Build with Java 21: `./gradlew build --no-daemon`. The sibling `core-modern` is built as a separate dependency JAR. The build compares animation vertices against fixtures exported by the actual legacy engine. Additional opt-in client/server checks are documented in [the feature and validation report](docs/PORT-STATUS-1.21.1.md); matched measurements and their limits are in [the performance report](docs/PERFORMANCE-COMPARISON.md).
 
-This is a native implementation, not a Forge 1.12.2 binary or a world conversion tool. The preserved registry names do not convert legacy chunk formats, block states or block-entity NBT automatically. The new Core supplies this port's native support and does not preserve the entire legacy Core API for other mods.
+Version 9.1.0 automatically upgrades original 1.12.2 Malisis blocks, entities and custom item data. Internal IDs stay unchanged despite the public rename. See [UPGRADING.md](docs/UPGRADING.md) for the preserved registry sidecar, conversion scope and handling unsupported third-party materials. The native Core supplies this port's support API; unrelated legacy Core consumers need their own ports.
 
 Upstream history and MIT licensing remain in the separate Doors/Core repositories. Original assets are covered by LICENSE.txt; the NeoForge template license is retained in TEMPLATE_LICENSE.txt.

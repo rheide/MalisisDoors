@@ -191,7 +191,7 @@ idea {
     }
 }
 
-jar { from('../legacy/LICENSE.txt') }
+jar { from('LICENSE.txt') }
 
 test { failOnNoDiscoveredTests = false }
 tasks.register('verifyMotion', JavaExec) {

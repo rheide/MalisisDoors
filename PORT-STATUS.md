@@ -1,3 +1,5 @@
+> Historical alpha report. The current release is MalisisDoors-compat 9.1.0; see [README.md](README.md), [current coverage](docs/PORT-STATUS-1.21.1.md), and [upgrade support](docs/UPGRADING.md). The limitations below describe the original time-boxed alpha.
+
 > Development update: 45 block variants are now implemented across standard doors, curtains, fifteen mechanism types, and eight trapdoor/gate/ladder types. The expanded dedicated server passed 3,470 checks and the client rendered all families, including resource reload. The report below describes the earlier exported 22-variant alpha. The current branch is still in progress; see PORTING-CHECKLIST.md.
 
 # Malisis Doors 1.21.1: experimental working subset

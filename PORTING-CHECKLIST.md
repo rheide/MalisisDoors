@@ -18,3 +18,10 @@ The native release restores the original creative content and validates placemen
 - [x] Final JARs, hashes, source bundles and accurate feature/measurement reports in ~/LLMShareDrive.
 
 Validation checkpoint: 20,736 original-engine vertex comparisons, 19 Core contract checks, 4,322 dedicated-server checks, complete native client/menu/item/resource-reload checks, and 751 saved-world restart checks pass. All 18 final matched phases completed with 3,240 frames and matching callback/vertex counts; final artifacts, hashes, source bundles and evidence accompany the release.
+
+## Compat upgrade release
+
+- [x] Public compat names and branded artifacts retain internal saved IDs.
+- [x] Separate public forks and separate performance, rename and native conversion commits.
+- [x] Automatic original 1.12.2 Malisis save conversion, immutable pre-conversion backups and retained registry sidecar.
+- [x] Authentic old-world, deferred chunk, restart and actual client validation; see docs/VALIDATION-9.1.0.md.

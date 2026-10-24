@@ -1,5 +1,9 @@
 # Changelog
 
+## 9.1.0 - MalisisDoors-compat
+
+Add automatic original 1.12.2 save conversion, retaining per-world Forge registry maps before save rewrites and backing up original Malisis chunks. Restore metadata, door halves/facing/hinges/open state, block entities, custom-door materials/settings, Factory contents, native item components, cross-chunk forcefields and large-door collision parts. Later unvisited old chunks can convert after a restart. Unsupported materials abort chunk loading instead of regenerating the chunk. Keep internal mod IDs unchanged under the public compat names. See docs/UPGRADING.md for the upgrade contract and validation.
+
 ## 9.0.1
 
 Restore the legacy player-facing placement rule for garage doors, all eight 3x3 doors, carriage/medieval doors and the high-tech door. Sneak-placement reverses that facing as in 1.12.2. This corrects their opening side relative to the player. Existing placed blocks retain their saved orientation; re-place affected structures to use the corrected placement rule.

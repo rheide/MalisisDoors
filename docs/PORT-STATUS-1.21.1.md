@@ -30,13 +30,13 @@ A clean restart passes 751 saved-world checks for doors, multiblock proxies, Fac
 
 ## Compatibility
 
-Install both final JARs with Java 21 and NeoForge 21.1.264, the tested version. This port uses native Minecraft/NeoForge APIs and is not a Forge 1.12.2 binary. Preserved registry names do not automatically convert old chunk formats, block states or NBT. A separate world migration remains necessary when moving the production 1.12.2 save.
+Install both final JARs with Java 21 and NeoForge 21.1.264, the tested version. This port uses native Minecraft/NeoForge APIs and is not a Forge 1.12.2 binary. Doors-compat 9.1.0 adds automatic conversion of original 1.12.2 Malisis save data. See UPGRADING.md for tested coverage and unsupported third-party materials.
 
 The native Core provides the functionality needed by this Doors implementation. It does not preserve the complete legacy Core Java API or make unrelated old Malisis mods compatible with 1.21.1. Native menus and item presentation follow current Minecraft conventions; this is functional restoration rather than a pixel-identical copy of the old GUI.
 
 ## Source and Git history
 
-Doors and Core remain separate local repositories based on the public Ordinastie repositories. Each has the optimized legacy release tagged `1.12.2`. The native branches follow those performance commits and preserve subsequent port commits. No GitHub fork or push was made. Source bundles accompany the release so the complete upstream and local history can be recovered.
+Doors and Core remain separate local repositories based on the public Ordinastie repositories. Each has the optimized legacy release tagged `1.12.2`. The native branches follow those performance commits and preserve subsequent port commits. The branches and release history are published in the owner forks at https://github.com/rheide/MalisisDoors and https://github.com/rheide/MalisisCore. Source bundles accompany the release so the complete upstream and local history can be recovered.
 
 ## 9.0.1 corrections
 

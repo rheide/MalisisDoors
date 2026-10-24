@@ -21,6 +21,7 @@ public final class MechanismEntity extends BlockEntity implements MovingGeometry
   public final DoorTimeline animation = new DoorTimeline();
   private final AABB fixedBounds;
   public boolean breaking, swingBackward;
+  private boolean legacyStructure;
   public long swingStarted = Long.MIN_VALUE / 2;
   public BlockState frame = Blocks.QUARTZ_BLOCK.defaultBlockState();
   static long topologyRevision;
@@ -284,6 +285,27 @@ public final class MechanismEntity extends BlockEntity implements MovingGeometry
   }
 
   public void tick() {
+    if (legacyStructure && !level.isClientSide && level.getGameTime() % 20 == 0) {
+      boolean complete = true;
+      for (var pos : block().footprint(worldPosition, getBlockState())) {
+        if (pos.equals(worldPosition)) continue;
+        if (!level.hasChunkAt(pos)) {
+          complete = false;
+          continue;
+        }
+        if (level.getBlockState(pos).isAir()) {
+          level.setBlock(pos, Mechanisms.PART.get().defaultBlockState(), 2);
+          if (level.getBlockEntity(pos) instanceof PartEntity part) {
+            part.root = worldPosition;
+            part.setChanged();
+          }
+        } // Preserve any foreign blocks built into a legacy virtual footprint.
+      }
+      if (complete) {
+        legacyStructure = false;
+        setChanged();
+      }
+    }
     if (spec().kind() == MechanismSpec.Kind.GARAGE) {
       topology();
       GeometryIndex.of(level).add(this);
@@ -436,6 +458,7 @@ public final class MechanismEntity extends BlockEntity implements MovingGeometry
     tag.put("frame", NbtUtils.writeBlockState(frame));
     tag.putLong("swingStarted", swingStarted);
     tag.putBoolean("swingBackward", swingBackward);
+    tag.putBoolean("legacyStructure", legacyStructure);
   }
 
   @Override
@@ -450,6 +473,7 @@ public final class MechanismEntity extends BlockEntity implements MovingGeometry
     collisionTick = Long.MIN_VALUE;
     swingStarted = tag.contains("swingStarted") ? tag.getLong("swingStarted") : Long.MIN_VALUE / 2;
     swingBackward = tag.getBoolean("swingBackward");
+    legacyStructure = tag.getBoolean("legacyStructure");
   }
 
   @Override

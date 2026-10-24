@@ -1,0 +1,4322 @@
+{
+  "malisisdoors:wood_sliding_door": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:iron_sliding_door": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:jail_door": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:laboratory_door": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:factory_door": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:shoji_door": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_white": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_orange": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_magenta": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_light_blue": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_yellow": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_lime": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_pink": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_gray": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_silver": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_cyan": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_purple": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_blue": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_brown": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_green": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_red": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:curtain_black": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:customdoor": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:saloon": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:sliding_trapdoor": [
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "true"
+    }
+  ],
+  "malisisdoors:trapdoor_acacia": [
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "true"
+    }
+  ],
+  "malisisdoors:trapdoor_birch": [
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "true"
+    }
+  ],
+  "malisisdoors:trapdoor_dark_oak": [
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "true"
+    }
+  ],
+  "malisisdoors:trapdoor_jungle": [
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "true"
+    }
+  ],
+  "malisisdoors:trapdoor_spruce": [
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "bottom",
+      "open": "true"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "false"
+    },
+    {
+      "facing": "north",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "south",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "west",
+      "half": "top",
+      "open": "true"
+    },
+    {
+      "facing": "east",
+      "half": "top",
+      "open": "true"
+    }
+  ],
+  "malisisdoors:camofencegate": [
+    {
+      "facing": "south",
+      "in_wall": "false",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "in_wall": "false",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "in_wall": "false",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "in_wall": "false",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "in_wall": "false",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "in_wall": "false",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "in_wall": "false",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "in_wall": "false",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "in_wall": "false",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "west",
+      "in_wall": "false",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "in_wall": "false",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "east",
+      "in_wall": "false",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "south",
+      "in_wall": "false",
+      "open": "true",
+      "powered": "true"
+    },
+    {
+      "facing": "west",
+      "in_wall": "false",
+      "open": "true",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "in_wall": "false",
+      "open": "true",
+      "powered": "true"
+    },
+    {
+      "facing": "east",
+      "in_wall": "false",
+      "open": "true",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:verticalhatch": [
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "east",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "south",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "west",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "lower",
+      "hinge": "left",
+      "open": "true",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "false"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "left",
+      "open": "false",
+      "powered": "true"
+    },
+    {
+      "facing": "north",
+      "half": "upper",
+      "hinge": "right",
+      "open": "false",
+      "powered": "true"
+    }
+  ],
+  "malisisdoors:garage_door": [
+    {
+      "direction": "south",
+      "power": "false"
+    },
+    {
+      "direction": "west",
+      "power": "false"
+    },
+    {
+      "direction": "north",
+      "power": "false"
+    },
+    {
+      "direction": "east",
+      "power": "false"
+    },
+    {
+      "direction": "south",
+      "power": "false"
+    },
+    {
+      "direction": "west",
+      "power": "false"
+    },
+    {
+      "direction": "north",
+      "power": "false"
+    },
+    {
+      "direction": "east",
+      "power": "false"
+    },
+    {
+      "direction": "south",
+      "power": "true"
+    },
+    {
+      "direction": "west",
+      "power": "true"
+    },
+    {
+      "direction": "north",
+      "power": "true"
+    },
+    {
+      "direction": "east",
+      "power": "true"
+    },
+    {
+      "direction": "south",
+      "power": "true"
+    },
+    {
+      "direction": "west",
+      "power": "true"
+    },
+    {
+      "direction": "north",
+      "power": "true"
+    },
+    {
+      "direction": "east",
+      "power": "true"
+    }
+  ],
+  "malisisdoors:carriage_door": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:medieval_door": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:big_door_oak_3x3": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:big_door_spruce_3x3": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:big_door_birch_3x3": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:big_door_jungle_3x3": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:big_door_acacia_3x3": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:big_door_dark_oak_3x3": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:big_door_iron_3x3": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:big_door_rusty_3x3": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:rustyhatch": [
+    {
+      "direction": "south",
+      "origin": "false",
+      "top": "false"
+    },
+    {
+      "direction": "west",
+      "origin": "false",
+      "top": "false"
+    },
+    {
+      "direction": "north",
+      "origin": "false",
+      "top": "false"
+    },
+    {
+      "direction": "east",
+      "origin": "false",
+      "top": "false"
+    },
+    {
+      "direction": "south",
+      "origin": "false",
+      "top": "true"
+    },
+    {
+      "direction": "west",
+      "origin": "false",
+      "top": "true"
+    },
+    {
+      "direction": "north",
+      "origin": "false",
+      "top": "true"
+    },
+    {
+      "direction": "east",
+      "origin": "false",
+      "top": "true"
+    },
+    {
+      "direction": "south",
+      "origin": "true",
+      "top": "false"
+    },
+    {
+      "direction": "west",
+      "origin": "true",
+      "top": "false"
+    },
+    {
+      "direction": "north",
+      "origin": "true",
+      "top": "false"
+    },
+    {
+      "direction": "east",
+      "origin": "true",
+      "top": "false"
+    },
+    {
+      "direction": "south",
+      "origin": "true",
+      "top": "true"
+    },
+    {
+      "direction": "west",
+      "origin": "true",
+      "top": "true"
+    },
+    {
+      "direction": "north",
+      "origin": "true",
+      "top": "true"
+    },
+    {
+      "direction": "east",
+      "origin": "true",
+      "top": "true"
+    }
+  ],
+  "malisisdoors:rustyladder": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:door_factory": [
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    },
+    {
+      "direction": "south"
+    },
+    {
+      "direction": "west"
+    },
+    {
+      "direction": "north"
+    },
+    {
+      "direction": "east"
+    }
+  ],
+  "malisisdoors:forcefielddoor": [
+    {
+      "direction": "south",
+      "origin": "false"
+    },
+    {
+      "direction": "west",
+      "origin": "false"
+    },
+    {
+      "direction": "north",
+      "origin": "false"
+    },
+    {
+      "direction": "east",
+      "origin": "false"
+    },
+    {
+      "direction": "south",
+      "origin": "false"
+    },
+    {
+      "direction": "west",
+      "origin": "false"
+    },
+    {
+      "direction": "north",
+      "origin": "false"
+    },
+    {
+      "direction": "east",
+      "origin": "false"
+    },
+    {
+      "direction": "south",
+      "origin": "true"
+    },
+    {
+      "direction": "west",
+      "origin": "true"
+    },
+    {
+      "direction": "north",
+      "origin": "true"
+    },
+    {
+      "direction": "east",
+      "origin": "true"
+    },
+    {
+      "direction": "south",
+      "origin": "true"
+    },
+    {
+      "direction": "west",
+      "origin": "true"
+    },
+    {
+      "direction": "north",
+      "origin": "true"
+    },
+    {
+      "direction": "east",
+      "origin": "true"
+    }
+  ],
+  "malisisdoors:hitechdoor": [
+    {
+      "direction": "south",
+      "power": "false"
+    },
+    {
+      "direction": "west",
+      "power": "false"
+    },
+    {
+      "direction": "north",
+      "power": "false"
+    },
+    {
+      "direction": "east",
+      "power": "false"
+    },
+    {
+      "direction": "south",
+      "power": "true"
+    },
+    {
+      "direction": "west",
+      "power": "true"
+    },
+    {
+      "direction": "north",
+      "power": "true"
+    },
+    {
+      "direction": "east",
+      "power": "true"
+    },
+    {
+      "direction": "south",
+      "power": "false"
+    },
+    {
+      "direction": "west",
+      "power": "false"
+    },
+    {
+      "direction": "north",
+      "power": "false"
+    },
+    {
+      "direction": "east",
+      "power": "false"
+    },
+    {
+      "direction": "south",
+      "power": "true"
+    },
+    {
+      "direction": "west",
+      "power": "true"
+    },
+    {
+      "direction": "north",
+      "power": "true"
+    },
+    {
+      "direction": "east",
+      "power": "true"
+    }
+  ]
+}

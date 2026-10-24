@@ -7,7 +7,9 @@
     "VanillaDoorMixin",
     "VanillaTrapdoorMixin",
     "VanillaGateMixin",
-    "DoorStateMixin"
+    "DoorStateMixin",
+    "LegacyItemMixin",
+    "LegacyChunkMixin"
   ],
   "injectors": {
     "defaultRequire": 1
