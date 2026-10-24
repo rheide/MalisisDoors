@@ -81,7 +81,7 @@ public final class MalisisDoors {
         "doors",
         () ->
             CreativeModeTab.builder()
-                .title(Component.literal("Malisis Doors"))
+                .title(Component.literal("MalisisDoors-compat"))
                 .icon(() -> new ItemStack(DOORS.getFirst().get()))
                 .displayItems(
                     (parameters, output) -> {
