@@ -1,3 +1,5 @@
+> Development update: 45 block variants are now implemented across standard doors, curtains, fifteen mechanism types, and eight trapdoor/gate/ladder types. The expanded dedicated server passed 3,470 checks and the client rendered all families, including resource reload. The report below describes the earlier exported 22-variant alpha. The current branch is still in progress; see PORTING-CHECKLIST.md.
+
 # Malisis Doors 1.21.1: experimental working subset
 
 This is a native NeoForge alpha, not a complete port of MalisisDoors or the legacy MalisisCore API. The time-boxed attempt produced a usable subset for a fresh test world. Do not treat it as a conversion tool for an existing 1.12.2 world.

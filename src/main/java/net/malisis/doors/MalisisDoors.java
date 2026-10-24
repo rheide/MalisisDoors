@@ -17,6 +17,7 @@ public final class MalisisDoors {
  public static final DeferredRegister.Items ITEMS=DeferredRegister.createItems(ID);
  public static final DeferredRegister<BlockEntityType<?>> TYPES=DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE,ID);
  public static final DeferredRegister<CreativeModeTab> TABS=DeferredRegister.create(Registries.CREATIVE_MODE_TAB,ID);
+ public static final DeferredItem<Item> RUSTY_HANDLE=ITEMS.registerSimpleItem("rustyhandle");
  public static final List<DoorSpec> SPECS=new ArrayList<>();
  public static final List<DeferredBlock<AnimatedDoorBlock>> DOORS=new ArrayList<>();
  static {
@@ -30,7 +31,7 @@ public final class MalisisDoors {
  }
  private static void add(DoorSpec spec){SPECS.add(spec);DeferredBlock<AnimatedDoorBlock> block=BLOCKS.register(spec.id(),()->new AnimatedDoorBlock(spec,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).strength(spec.redstoneOnly()?5:2).noOcclusion()));DOORS.add(block);ITEMS.registerSimpleBlockItem(spec.id(),block);}
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<DoorBlockEntity>> DOOR_ENTITY=TYPES.register("door",()->BlockEntityType.Builder.of(DoorBlockEntity::new,DOORS.stream().map(DeferredBlock::get).toArray(Block[]::new)).build(null));
- static {TABS.register("doors",()->CreativeModeTab.builder().title(Component.literal("Malisis Doors · experimental 1.21.1")).icon(()->new ItemStack(DOORS.getFirst().get())).displayItems((parameters,output)->{DOORS.forEach(b->output.accept(b.get()));net.malisis.doors.mechanism.Mechanisms.BLOCKS.forEach(b->output.accept(b.get()));}).build());}
- static {net.malisis.doors.mechanism.Mechanisms.init();}
+ static {TABS.register("doors",()->CreativeModeTab.builder().title(Component.literal("Malisis Doors · experimental 1.21.1")).icon(()->new ItemStack(DOORS.getFirst().get())).displayItems((parameters,output)->{DOORS.forEach(b->output.accept(b.get()));net.malisis.doors.mechanism.Mechanisms.BLOCKS.forEach(b->output.accept(b.get()));net.malisis.doors.flat.FlatBlocks.BLOCKS.forEach(b->output.accept(b.get()));output.accept(RUSTY_HANDLE.get());}).build());}
+ static {net.malisis.doors.mechanism.Mechanisms.init();net.malisis.doors.flat.FlatBlocks.init();}
  public MalisisDoors(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);TYPES.register(bus);TABS.register(bus);}
 }

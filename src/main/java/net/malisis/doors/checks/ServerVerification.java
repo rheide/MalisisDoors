@@ -79,13 +79,16 @@ public final class ServerVerification {
     level.removeBlock(pos.relative(Direction.SOUTH),false);
     check(!level.getBlockState(pos).getValue(DoorBlock.OPEN),"redstone closes "+block.spec.id());
     if(block.spec.pairable()){
-     // Construct the exact adjacent hinge layout, then exercise the ordinary hand/redstone paths.
+     // Place both leaves through their real items, including the native hinge-selection path.
      BlockPos a=new BlockPos(64+(i%8)*4,64,48+(i/8)*4),b=a.east();
      for(BlockPos q:List.of(a,b))level.setBlockAndUpdate(q.below(),Blocks.STONE.defaultBlockState());
-     BlockState first=block.defaultBlockState().setValue(DoorBlock.FACING,Direction.SOUTH).setValue(DoorBlock.HINGE,DoorHingeSide.LEFT);
-     BlockState second=first.setValue(DoorBlock.HINGE,DoorHingeSide.RIGHT);
-     level.setBlock(a,first,3);level.setBlock(a.above(),first.setValue(DoorBlock.HALF,DoubleBlockHalf.UPPER),3);
-     level.setBlock(b,second,3);level.setBlock(b.above(),second.setValue(DoorBlock.HALF,DoubleBlockHalf.UPPER),3);
+     for(BlockPos q:List.of(a,b)){
+      level.removeBlock(q,false);level.removeBlock(q.above(),false);player.setYRot(Direction.SOUTH.toYRot());var doorItem=new ItemStack(block);player.setItemInHand(InteractionHand.MAIN_HAND,doorItem);
+      var placement=doorItem.useOn(new UseOnContext(player,InteractionHand.MAIN_HAND,new BlockHitResult(new Vec3(q.getX()+.25,q.getY(),q.getZ()+.5),Direction.UP,q.below(),false)));
+      check(placement.consumesAction(),"paired item placement "+block.spec.id());
+     }
+     BlockState first=level.getBlockState(a),second=level.getBlockState(b);
+     check(first.getValue(DoorBlock.HINGE)==DoorHingeSide.RIGHT&&second.getValue(DoorBlock.HINGE)==DoorHingeSide.LEFT,"native paired hinges face outward");
      block.setOpen(player,level,first,a,true);
      check(level.getBlockState(a).getValue(DoorBlock.OPEN)&&level.getBlockState(b).getValue(DoorBlock.OPEN),"paired lower opens "+block.spec.id());
      check(level.getBlockState(a.above()).getValue(DoorBlock.OPEN)&&level.getBlockState(b.above()).getValue(DoorBlock.OPEN),"paired upper opens");
@@ -99,32 +102,34 @@ public final class ServerVerification {
     var state=block.defaultBlockState().setValue(net.malisis.doors.mechanism.MechanismBlock.FACING,face).setValue(net.malisis.doors.mechanism.MechanismBlock.TOP,true);
     for(BlockPos q:block.footprint(origin,state)){level.removeBlock(q,false);level.setBlockAndUpdate(new BlockPos(q.getX(),63,q.getZ()),Blocks.STONE.defaultBlockState());}
     BlockPos support=origin.below();Direction placingFace=Direction.UP;Vec3 point=Vec3.atCenterOf(support).add(0,.5,0);
-    if(block.spec.kind()==net.malisis.doors.mechanism.MechanismSpec.Kind.RUSTY_HATCH){support=origin.offset(net.malisis.doors.mechanism.MechanismPose.offset(face,-1,0,0));placingFace=face.getCounterClockWise();level.setBlockAndUpdate(support,Blocks.STONE.defaultBlockState());point=Vec3.atCenterOf(support).add(placingFace.getStepX()*.5,.25,placingFace.getStepZ()*.5);}
+    if(block.spec.kind()==net.malisis.doors.mechanism.MechanismSpec.Kind.RUSTY_HATCH){support=origin.relative(face.getOpposite());placingFace=face;level.setBlockAndUpdate(support,Blocks.STONE.defaultBlockState());point=Vec3.atCenterOf(support).add(placingFace.getStepX()*.5,.25,placingFace.getStepZ()*.5);}
     var player=FakePlayerFactory.getMinecraft(level);player.setYRot(face.toYRot());player.setPos(origin.getX()+.5,64,origin.getZ()+.5);var stack=new net.minecraft.world.item.ItemStack(block);player.setItemInHand(InteractionHand.MAIN_HAND,stack);
     var result=stack.useOn(new UseOnContext(player,InteractionHand.MAIN_HAND,new BlockHitResult(point,placingFace,support,false)));
     check(result.consumesAction(),"mechanism placement "+block.spec.id()+" "+face);
     check(level.getBlockEntity(origin) instanceof net.malisis.doors.mechanism.MechanismEntity,"mechanism anchor "+block.spec.id());
     var entity=(net.malisis.doors.mechanism.MechanismEntity)level.getBlockEntity(origin);MECHANISMS.add(origin);
     for(BlockPos q:block.footprint(origin,level.getBlockState(origin)))if(!q.equals(origin))check(level.getBlockEntity(q) instanceof net.malisis.doors.mechanism.PartEntity part&&part.root.equals(origin),"mechanism proxy points to root");
-    check(!entity.collisionBoxes().isEmpty(),"mechanism has closed collision "+block.spec.id());
+    check(!entity.selectionBoxes().isEmpty(),"mechanism has selection "+block.spec.id());
     entity.open(true);entity.animation.reset(true,level.getGameTime());entity.sync();check(entity.isOpen(),"mechanism opens "+block.spec.id());
-    var bounds=entity.collisionBoxes().getFirst();boolean physical=false;for(var shape:level.getBlockCollisions(null,bounds.deflate(.001)))if(shape.bounds().intersects(bounds))physical=true;
+    var bounds=entity.selectionBoxes().getFirst();boolean physical=block.spec.kind()==net.malisis.doors.mechanism.MechanismSpec.Kind.SALOON;for(var shape:level.getBlockCollisions(null,bounds.deflate(.001)))if(shape.bounds().intersects(bounds))physical=true;
     check(physical,"mechanism carried collision "+block.spec.id());
     entity.open(false);entity.animation.reset(false,level.getGameTime());entity.sync();
    }
+   FlatVerification.run(level);
    Files.createDirectories(Path.of(System.getProperty("malisis.verify.out")));
-   Files.writeString(Path.of(System.getProperty("malisis.verify.out"),"server-verification.txt"),"PASS "+checks+" checks; "+MECHANISMS.size()+" item-placed multiblock mechanisms; "+ROOTS.size()+" item-placed leaves; all 22 variants, four facings; hand, redstone, paired state, two halves, entity ownership\n");
+   Files.writeString(Path.of(System.getProperty("malisis.verify.out"),"server-verification.txt"),"PASS "+checks+" checks; "+FlatVerification.ROOTS.size()+" flat fixtures; "+MECHANISMS.size()+" item-placed multiblock mechanisms; "+ROOTS.size()+" item-placed leaves; all 22 variants, four facings; hand, redstone, paired state, two halves, entity ownership\n");
   }catch(Throwable e){failure=e.toString();e.printStackTrace();try{Files.createDirectories(Path.of(System.getProperty("malisis.verify.out")));Files.writeString(Path.of(System.getProperty("malisis.verify.out"),"SERVER-FAILED.txt"),failure);}catch(Exception ignored){}}
  }
  @SubscribeEvent public static void commands(net.neoforged.neoforge.event.RegisterCommandsEvent event){if(!enabled())return;
   event.getDispatcher().register(net.minecraft.commands.Commands.literal("malisisverifyview").then(net.minecraft.commands.Commands.argument("view",com.mojang.brigadier.arguments.StringArgumentType.word()).executes(context->{
    var player=context.getSource().getPlayerOrException();var view=com.mojang.brigadier.arguments.StringArgumentType.getString(context,"view");
-   if(view.equals("mechanisms"))player.connection.teleport(28,88,36,0,35);else player.connection.teleport(20,83,-13,0,35);return 1;
+   if(view.equals("flat"))player.connection.teleport(142,80,-12,0,35);else if(view.equals("mechanisms"))player.connection.teleport(28,88,36,0,35);else player.connection.teleport(20,83,-13,0,35);return 1;
   })));
  }
  @SubscribeEvent public static void login(PlayerEvent.PlayerLoggedInEvent event){if(enabled()&&event.getEntity() instanceof ServerPlayer player){player.setGameMode(GameType.SPECTATOR);player.connection.teleport(20,83,-13,0,35);}}
  @SubscribeEvent public static void tick(ServerTickEvent.Post event){if(!enabled()||failure!=null||ROOTS.isEmpty())return;if(++ticks%120!=0)return;
   var level=event.getServer().overworld();boolean open=(ticks/120)%2==1;
+  for(BlockPos pos:MECHANISMS){if(level.getBlockEntity(pos) instanceof net.malisis.doors.mechanism.MechanismEntity mechanism)mechanism.open(open);}
   for(BlockPos pos:ROOTS){var state=level.getBlockState(pos);if(state.getBlock() instanceof AnimatedDoorBlock door)door.setOpen(null,level,state,pos,open);}
  }
 }

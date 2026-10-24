@@ -49,13 +49,13 @@ public final class MechanismRenderer implements BlockEntityRenderer<MechanismEnt
   if(entity.spec().kind()==MechanismSpec.Kind.GARAGE&&entity.columnTop()!=entity)return;
   if(System.getProperty("malisis.verify.out")!=null)RENDERED.add(entity.spec().id());
   var parts=model(entity.spec(),entity.frame);float progress=entity.progress(partial);
-  MechanismPose.facing(facing,entity.facing());
+  entity.facingPose(facing);
   stack.pushPose();stack.mulPose(facing);
   if(entity.spec().kind()==MechanismSpec.Kind.GARAGE){int count=entity.columnHeight();var buffer=buffers.getBuffer(RenderType.entityCutout(InventoryMenu.BLOCK_ATLAS));for(int down=0;down<count;down++){
    stack.pushPose();MechanismPose.garage(pose,count,down,progress);stack.mulPose(pose);int live=LevelRenderer.getLightColor(entity.getLevel(),entity.getBlockPos().below(down));parts[down==0?0:1].mesh.emit(stack.last(),buffer,live,overlay);stack.popPose();
   }}else for(var part:parts){
    if(part.name.equals("ladder"))continue; // Hatch ladders are emitted separately in each reserved shaft cell.
-   stack.pushPose();MechanismPose.part(pose,entity.spec().kind(),part.name,progress,entity.getBlockState().getValue(MechanismBlock.TOP));stack.mulPose(pose);
+   stack.pushPose();entity.partPose(pose,part.name,progress);stack.mulPose(pose);
    part.mesh.emit(stack.last(),buffers.getBuffer(part.name.contains("glass")?RenderType.entityTranslucent(InventoryMenu.BLOCK_ATLAS):RenderType.entityCutout(InventoryMenu.BLOCK_ATLAS)),light,overlay);stack.popPose();
   }
   if(entity.spec().kind()==MechanismSpec.Kind.RUSTY_HATCH)for(var part:parts)if(part.name.equals("ladder")){

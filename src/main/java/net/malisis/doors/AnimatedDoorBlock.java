@@ -25,7 +25,7 @@ public final class AnimatedDoorBlock extends DoorBlock implements EntityBlock {
   super.setOpen(entity,level,state,pos,open);
   if(level.isClientSide||!spec.pairable())return;
   BlockPos root=state.getValue(HALF)==DoubleBlockHalf.LOWER?pos:pos.below();
-  Direction side=state.getValue(HINGE)==DoorHingeSide.LEFT?state.getValue(FACING).getCounterClockWise():state.getValue(FACING).getClockWise();
+  Direction side=state.getValue(HINGE)==DoorHingeSide.LEFT?state.getValue(FACING).getClockWise():state.getValue(FACING).getCounterClockWise();
   BlockPos other=root.relative(side);BlockState partner=level.getBlockState(other);
   if(partner.is(this)&&partner.getValue(FACING)==state.getValue(FACING)&&partner.getValue(HINGE)!=state.getValue(HINGE))super.setOpen(entity,level,partner,other,open);
  }

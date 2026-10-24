@@ -11,12 +11,14 @@ public final class Mechanisms {
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<PartEntity>> PART_ENTITY=MalisisDoors.TYPES.register("door_part",()->BlockEntityType.Builder.of(PartEntity::new,PART.get()).build(null));
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<MechanismEntity>> ENTITY=MalisisDoors.TYPES.register("mechanism",()->BlockEntityType.Builder.of(MechanismEntity::new,BLOCKS.stream().map(DeferredBlock::get).toArray(Block[]::new)).build(null));
  public static void init(){
+  add(new MechanismSpec("saloon",SALOON,1,2,1,0,"saloon_door","saloon_door",40));
+  add(new MechanismSpec("verticalhatch",VERTICAL,1,2,1,0,"vertical_hatch","vertical_hatch",60));
   add(new MechanismSpec("garage_door",GARAGE,1,1,1,0,"garage_door",null,10));
   for(String wood:List.of("oak","spruce","birch","jungle","acacia","dark_oak","iron","rusty"))add(new MechanismSpec("big_door_"+wood+"_3x3",LARGE,3,3,1,-1,"big_door_"+wood+"_3x3",null,20));
   add(new MechanismSpec("carriage_door",CARRIAGE,4,5,1,0,"carriage_door","big_door",20));
   add(new MechanismSpec("medieval_door",MEDIEVAL,4,5,1,0,"medieval_door","big_door",20));
   add(new MechanismSpec("hitechdoor",HITECH,3,2,1,-1,"hitechdoor","hitechdoor",21));
-  add(new MechanismSpec("rustyhatch",RUSTY_HATCH,2,3,2,0,"rusty_hatch","rusty_hatch",80));
+  add(new MechanismSpec("rustyhatch",RUSTY_HATCH,2,3,2,-1,"rusty_hatch","rusty_hatch",80));
  }
  private static void add(MechanismSpec spec){var block=MalisisDoors.BLOCKS.register(spec.id(),()->new MechanismBlock(spec,Block.Properties.ofFullCopy(Blocks.IRON_BLOCK).strength(4).noOcclusion()));BLOCKS.add(block);MalisisDoors.ITEMS.registerSimpleBlockItem(spec.id(),block);}
 }

@@ -12,7 +12,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.neoforge.client.event.ClientTickEvent;
 @EventBusSubscriber(modid="malisisdoors",value=Dist.CLIENT)
 public final class ClientVerification {
- static int ticks,midpoints,generation,mechanismWait;static boolean done;static float min=1,max=0;static java.util.concurrent.CompletableFuture<Void> reload;static Object oldMesh;
+ static int ticks,midpoints,generation,mechanismWait,verifiedEntities;static boolean done;static float min=1,max=0;static java.util.concurrent.CompletableFuture<Void> reload;static Object oldMesh;
  @SubscribeEvent public static void tick(ClientTickEvent.Post event)throws Exception {
   String output=System.getProperty("malisis.verify.out");if(output==null||done)return;
   Minecraft mc=Minecraft.getInstance();if(mc.level==null||mc.player==null)return;
@@ -41,14 +41,18 @@ public final class ClientVerification {
    textures++;
   }
   for(int i=0;i<88;i++)if(mc.level.getBlockEntity(new net.minecraft.core.BlockPos((i%11)*4,64,(i/11)*4)) instanceof DoorBlockEntity)entities++;
-  if(entities!=88)throw new IllegalStateException("Expected 88 fixture entities, got "+entities);
+  if(entities!=88&&mechanismWait<100)throw new IllegalStateException("Expected 88 fixture entities, got "+entities);
+  if(mechanismWait<100)verifiedEntities=entities;
   if(DoorRenderer.MESHES.size()==0)throw new IllegalStateException("Renderer never populated mesh cache");
   if(mechanismWait++==0){mc.player.connection.sendCommand("malisisverifyview mechanisms");return;}
   if(mechanismWait<100)return;
   for(var entry:net.malisis.doors.mechanism.Mechanisms.BLOCKS)if(!net.malisis.doors.client.MechanismRenderer.RENDERED.contains(entry.get().spec.id()))throw new IllegalStateException("Mechanism was never rendered: "+entry.get().spec.id());
+  if(mechanismWait==100){Screenshot.grab(Path.of(output).toFile(),"mechanisms.png",mc.getMainRenderTarget(),message->{});mc.player.connection.sendCommand("malisisverifyview flat");return;}
+  if(mechanismWait<180)return;
+  for(var entry:net.malisis.doors.flat.FlatBlocks.BLOCKS)if(!net.malisis.doors.client.FlatRenderer.RENDERED.contains(entry.getId()))throw new IllegalStateException("Flat family was never rendered: "+entry.getId());
   Path folder=Path.of(output);Files.createDirectories(folder);
   Screenshot.grab(folder.toFile(),"modern-showroom.png",mc.getMainRenderTarget(),message->{});
-  Files.writeString(folder.resolve("client-verification.txt"),"PASS connected to dedicated server; "+entities+" doors, "+textures+" resolved sprites, "+DoorRenderer.MESHES.size()+" cached descriptor meshes; "+net.malisis.doors.client.MechanismRenderer.RENDERED.size()+" mechanism families rendered; continuous motion observed ("+midpoints+" intermediate ticks), resource reload rebuilt meshes; screenshot saved.\n");
+  Files.writeString(folder.resolve("client-verification.txt"),"PASS connected to dedicated server; "+verifiedEntities+" doors, "+textures+" resolved sprites, "+DoorRenderer.MESHES.size()+" cached descriptor meshes; "+net.malisis.doors.client.MechanismRenderer.RENDERED.size()+" mechanism families rendered; "+net.malisis.doors.client.FlatRenderer.RENDERED.size()+" flat families rendered; continuous motion observed ("+midpoints+" intermediate ticks), resource reload rebuilt meshes; screenshot saved.\n");
   done=true;
   if(Boolean.getBoolean("malisis.verify.exit"))mc.stop();
  }
