@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "malisisdoors:items/carriage_door_item"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "malisisdoors:big_door_oak_3x3"
+        }
+      ]
+    }
+  ]
+}

@@ -34,20 +34,9 @@ public final class AnimatedDoorBlock extends DoorBlock implements EntityBlock {
   BlockState after=level.getBlockState(pos);
   if(!level.isClientSide&&after.is(this)&&state.getValue(OPEN)!=after.getValue(OPEN))setOpen(null,level,after,pos,after.getValue(OPEN));
  }
- @Override protected VoxelShape getCollisionShape(BlockState state,BlockGetter level,BlockPos pos,CollisionContext context){
-  // End poses match each native movement; continuous carried-panel collision remains future work.
-  if(!state.getValue(OPEN))return super.getShape(state,level,pos,context);
-  if(spec.movement()==DoorSpec.Movement.SPLIT&&state.getValue(HALF)==DoubleBlockHalf.UPPER)return switch(state.getValue(FACING)){
-   case NORTH->Block.box(0,13,13,16,16,16);case EAST->Block.box(0,13,0,3,16,16);case WEST->Block.box(13,13,0,16,16,16);default->Block.box(0,13,0,16,16,3);
-  };
-  if(spec.movement()==DoorSpec.Movement.CURTAIN){
-   double x=state.getValue(HINGE)==DoorHingeSide.LEFT?13:0;
-   VoxelShape local=Block.box(x,0,0,x+3,16,3);
-   return switch(state.getValue(FACING)){case NORTH->Block.box(13-x,0,13,16-x,16,16);case EAST->Block.box(0,0,13-x,3,16,16-x);case WEST->Block.box(13,0,x,16,16,x+3);default->local;};
-  }
-  return Shapes.empty();
- }
+ @Override protected VoxelShape getCollisionShape(BlockState state,BlockGetter level,BlockPos pos,CollisionContext context){return Shapes.empty();}
  @Override protected VoxelShape getShape(BlockState state,BlockGetter level,BlockPos pos,CollisionContext context){
-  return super.getShape(state.setValue(OPEN,false),level,pos,context);
+  BlockPos root=state.getValue(HALF)==DoubleBlockHalf.LOWER?pos:pos.below();
+  return level.getBlockEntity(root) instanceof DoorBlockEntity door?door.outline(pos):super.getShape(state,level,pos,context);
  }
 }

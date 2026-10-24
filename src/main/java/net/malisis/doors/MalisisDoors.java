@@ -30,6 +30,7 @@ public final class MalisisDoors {
  }
  private static void add(DoorSpec spec){SPECS.add(spec);DeferredBlock<AnimatedDoorBlock> block=BLOCKS.register(spec.id(),()->new AnimatedDoorBlock(spec,BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_DOOR).strength(spec.redstoneOnly()?5:2).noOcclusion()));DOORS.add(block);ITEMS.registerSimpleBlockItem(spec.id(),block);}
  public static final DeferredHolder<BlockEntityType<?>,BlockEntityType<DoorBlockEntity>> DOOR_ENTITY=TYPES.register("door",()->BlockEntityType.Builder.of(DoorBlockEntity::new,DOORS.stream().map(DeferredBlock::get).toArray(Block[]::new)).build(null));
- static {TABS.register("doors",()->CreativeModeTab.builder().title(Component.literal("Malisis Doors · experimental 1.21.1")).icon(()->new ItemStack(DOORS.getFirst().get())).displayItems((parameters,output)->DOORS.forEach(b->output.accept(b.get()))).build());}
+ static {TABS.register("doors",()->CreativeModeTab.builder().title(Component.literal("Malisis Doors · experimental 1.21.1")).icon(()->new ItemStack(DOORS.getFirst().get())).displayItems((parameters,output)->{DOORS.forEach(b->output.accept(b.get()));net.malisis.doors.mechanism.Mechanisms.BLOCKS.forEach(b->output.accept(b.get()));}).build());}
+ static {net.malisis.doors.mechanism.Mechanisms.init();}
  public MalisisDoors(IEventBus bus){BLOCKS.register(bus);ITEMS.register(bus);TYPES.register(bus);TABS.register(bus);}
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "malisisdoors:items/big_door_jungle_3x3"
+  }
+}

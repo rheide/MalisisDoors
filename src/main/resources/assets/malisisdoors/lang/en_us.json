@@ -20,5 +20,18 @@
   "block.malisisdoors.curtain_green": "Curtain Green",
   "block.malisisdoors.curtain_red": "Curtain Red",
   "block.malisisdoors.curtain_black": "Curtain Black",
-  "block.malisisdoors.curtain_silver": "Light Gray Curtain"
+  "block.malisisdoors.curtain_silver": "Light Gray Curtain",
+  "block.malisisdoors.garage_door": "Garage Door",
+  "block.malisisdoors.carriage_door": "Carriage Door",
+  "block.malisisdoors.medieval_door": "Medieval Door",
+  "block.malisisdoors.hitechdoor": "Hitechdoor",
+  "block.malisisdoors.rustyhatch": "Rustyhatch",
+  "block.malisisdoors.big_door_oak_3x3": "Big Door Oak 3X3",
+  "block.malisisdoors.big_door_spruce_3x3": "Big Door Spruce 3X3",
+  "block.malisisdoors.big_door_birch_3x3": "Big Door Birch 3X3",
+  "block.malisisdoors.big_door_jungle_3x3": "Big Door Jungle 3X3",
+  "block.malisisdoors.big_door_acacia_3x3": "Big Door Acacia 3X3",
+  "block.malisisdoors.big_door_dark_oak_3x3": "Big Door Dark Oak 3X3",
+  "block.malisisdoors.big_door_iron_3x3": "Big Door Iron 3X3",
+  "block.malisisdoors.big_door_rusty_3x3": "Big Door Rusty 3X3"
 }
