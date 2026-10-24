@@ -1,9 +1,0 @@
-{
-	"type": "malisisdoors:big_door",
-	"door": {
-		"item": "minecraft:wooden_door"
-	},
-	"result": {
-		"item": "malisisdoors:carriage_door"
-	}
-}

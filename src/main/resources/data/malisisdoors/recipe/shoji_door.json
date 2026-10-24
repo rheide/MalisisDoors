@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AB",
+    "AB",
+    "AB"
+  ],
+  "key": {
+    "A": {
+      "tag": "minecraft:planks"
+    },
+    "B": {
+      "item": "minecraft:paper"
+    }
+  },
+  "result": {
+    "count": 3,
+    "id": "malisisdoors:shoji_door"
+  }
+}

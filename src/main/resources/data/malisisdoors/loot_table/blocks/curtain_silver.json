@@ -1,0 +1,1 @@
+{"type": "minecraft:block", "pools": [{"rolls": 1, "entries": [{"type": "minecraft:item", "name": "malisisdoors:curtain_silver"}], "conditions": [{"condition": "minecraft:block_state_property", "block": "malisisdoors:curtain_silver", "properties": {"half": "lower"}}]}]}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "AA",
+    "AA",
+    "AA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:iron_bars"
+    }
+  },
+  "result": {
+    "count": 3,
+    "id": "malisisdoors:jail_door"
+  }
+}
