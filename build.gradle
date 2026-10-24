@@ -192,3 +192,23 @@ idea {
 }
 
 jar { from('../legacy/LICENSE.txt') }
+
+test { failOnNoDiscoveredTests = false }
+tasks.register('verifyMotion', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'net.malisis.doors.checks.MotionParity'
+    args file('src/test/resources/legacy-motion.csv').absolutePath
+}
+check.dependsOn verifyMotion
+sourceSets.test.compileClasspath += sourceSets.main.compileClasspath
+sourceSets.test.runtimeClasspath += sourceSets.main.runtimeClasspath
+sourceSets.test.runtimeClasspath += sourceSets.main.compileClasspath
+tasks.named('verifyMotion') { classpath = sourceSets.test.output + sourceSets.main.output + sourceSets.main.compileClasspath }
+tasks.register('verifyMechanisms', JavaExec) {
+    dependsOn testClasses
+    classpath = sourceSets.test.output + sourceSets.main.output + sourceSets.main.compileClasspath
+    mainClass = 'net.malisis.doors.checks.MechanismParity'
+    args file('src/test/resources/legacy-mechanisms.csv').absolutePath
+}
+check.dependsOn verifyMechanisms

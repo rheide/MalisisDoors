@@ -1,0 +1,106 @@
+{
+  "slidingdooro": {
+    "sounds": [
+      {
+        "name": "malisisdoors:slidingdooro",
+        "stream": false
+      }
+    ]
+  },
+  "jaildoor": {
+    "sounds": [
+      {
+        "name": "malisisdoors:jaildoor",
+        "stream": false
+      }
+    ]
+  },
+  "space_door_open": {
+    "sounds": [
+      {
+        "name": "malisisdoors:space_door_open",
+        "stream": false
+      }
+    ]
+  },
+  "space_door_close": {
+    "sounds": [
+      {
+        "name": "malisisdoors:space_door_close",
+        "stream": false
+      }
+    ]
+  },
+  "shoji_door": {
+    "sounds": [
+      {
+        "name": "malisisdoors:shoji",
+        "stream": false
+      }
+    ]
+  },
+  "rustyhatch_open": {
+    "sounds": [
+      {
+        "name": "malisisdoors:rustyhatch_open",
+        "stream": false
+      }
+    ]
+  },
+  "rustyhatch_close": {
+    "sounds": [
+      {
+        "name": "malisisdoors:rustyhatch_close",
+        "stream": false
+      }
+    ]
+  },
+  "carriage_opening": {
+    "sounds": [
+      {
+        "name": "malisisdoors:carriage_opening",
+        "stream": false
+      }
+    ]
+  },
+  "carriage_closing": {
+    "sounds": [
+      {
+        "name": "malisisdoors:carriage_closing",
+        "stream": false
+      }
+    ]
+  },
+  "carriage_closed": {
+    "sounds": [
+      {
+        "name": "malisisdoors:carriage_closed",
+        "stream": false
+      }
+    ]
+  },
+  "rustydoor_opening": {
+    "sounds": [
+      {
+        "name": "malisisdoors:rustydoor_opening",
+        "stream": false
+      }
+    ]
+  },
+  "rustydoor_closing": {
+    "sounds": [
+      {
+        "name": "malisisdoors:rustydoor_closing",
+        "stream": false
+      }
+    ]
+  },
+  "rustydoor_closed": {
+    "sounds": [
+      {
+        "name": "malisisdoors:rustydoor_closed",
+        "stream": false
+      }
+    ]
+  }
+}

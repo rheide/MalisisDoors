@@ -1,1 +1,21 @@
-{"sources": [{"type": "minecraft:directory", "source": "blocks", "prefix": "blocks/"}, {"type": "minecraft:directory", "source": "items", "prefix": "items/"}]}
+{
+  "sources": [
+    {
+      "type": "minecraft:directory",
+      "source": "blocks",
+      "prefix": "blocks/"
+    },
+    {
+      "type": "minecraft:directory",
+      "source": "items",
+      "prefix": "items/"
+    },
+    {
+      "type": "minecraft:filter",
+      "pattern": {
+        "namespace": "malisisdoors",
+        "path": "blocks/forcefield/.*"
+      }
+    }
+  ]
+}

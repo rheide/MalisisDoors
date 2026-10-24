@@ -1,0 +1,18 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.malisis.doors.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "VanillaDoorMixin",
+    "VanillaTrapdoorMixin",
+    "VanillaGateMixin",
+    "DoorStateMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "DoorItemMixin"
+  ]
+}

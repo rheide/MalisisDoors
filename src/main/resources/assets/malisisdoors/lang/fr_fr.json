@@ -235,6 +235,11 @@
   "gui.door_factory.door_edit_slot": "Porte à modifier",
   "gui.door_factory.create_door": "Créer la porte",
   "gui.door_factory.edit_door": "Modifier la porte",
+  "block.malisisdoors.forcefielditem_green": "Forcefielditem Green",
+  "block.malisisdoors.forcefielditem_red": "Forcefielditem Red",
+  "block.malisisdoors.rustyhandle": "Rustyhandle",
+  "block.malisisdoors.customdooritem": "Customdooritem",
   "block.malisisdoors.hitechdoor": "Hitechdoor",
-  "block.malisisdoors.rustyhandle": "Rustyhandle"
+  "block.malisisdoors.forcefielditem": "Forcefielditem",
+  "block.malisisdoors.forcefielditem_yellow": "Forcefielditem Yellow"
 }

@@ -1,0 +1,26 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "malisisdoors:items/forcefielditem"
+  },
+  "overrides": [
+    {
+      "predicate": {
+        "malisisdoors:field_state": 1
+      },
+      "model": "malisisdoors:item/forcefielditem_yellow"
+    },
+    {
+      "predicate": {
+        "malisisdoors:field_state": 2
+      },
+      "model": "malisisdoors:item/forcefielditem_red"
+    },
+    {
+      "predicate": {
+        "malisisdoors:field_state": 3
+      },
+      "model": "malisisdoors:item/forcefielditem_green"
+    }
+  ]
+}

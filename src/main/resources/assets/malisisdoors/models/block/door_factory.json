@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/orientable",
+  "textures": {
+    "top": "malisisdoors:blocks/door_factory_side",
+    "side": "malisisdoors:blocks/door_factory_side",
+    "front": "malisisdoors:blocks/door_factory"
+  }
+}
