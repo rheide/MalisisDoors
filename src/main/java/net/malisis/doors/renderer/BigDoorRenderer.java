@@ -46,6 +46,8 @@ import net.minecraft.util.ResourceLocation;
  */
 public class BigDoorRenderer extends MalisisRenderer<BigDoorTileEntity>
 {
+    private final net.malisis.doors.renderer.DoorAnimationPlans animationPlans = new net.malisis.doors.renderer.DoorAnimationPlans();
+
 	private ResourceLocation rl;
 	private MalisisModel model;
 	private Shape frame;
@@ -114,7 +116,7 @@ public class BigDoorRenderer extends MalisisRenderer<BigDoorTileEntity>
 
 		if (tileEntity.getMovement() != null)
 		{
-			Animation<?>[] anims = tileEntity.getMovement().getAnimations(tileEntity, model, rp);
+			Animation<?>[] anims = animationPlans.get(tileEntity, model, rp);
 			ar.animate(anims);
 		}
 

@@ -12,6 +12,8 @@ import net.minecraft.util.EnumFacing;
 
 public class Door3x3Renderer extends MalisisRenderer<Door3x3Tile>
 {
+    private final net.malisis.doors.renderer.DoorAnimationPlans animationPlans = new net.malisis.doors.renderer.DoorAnimationPlans();
+
 	private MalisisModel model;
 	private RenderParameters rp;
 	private AnimationRenderer ar = new AnimationRenderer();
@@ -69,7 +71,7 @@ public class Door3x3Renderer extends MalisisRenderer<Door3x3Tile>
 
 		if (tileEntity.getMovement() != null)
 		{
-			Animation<?>[] anims = tileEntity.getMovement().getAnimations(tileEntity, model, rp);
+			Animation<?>[] anims = animationPlans.get(tileEntity, model, rp);
 			ar.animate(anims);
 		}
 

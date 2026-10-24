@@ -49,6 +49,8 @@ import net.minecraft.util.EnumFacing;
  */
 public class TrapDoorRenderer extends MalisisRenderer<TrapDoorTileEntity>
 {
+    private final net.malisis.doors.renderer.DoorAnimationPlans animationPlans = new net.malisis.doors.renderer.DoorAnimationPlans();
+
 	public static TrapDoorRenderer instance = new TrapDoorRenderer();
 
 	private MalisisModel trapDoorModel;
@@ -191,7 +193,7 @@ public class TrapDoorRenderer extends MalisisRenderer<TrapDoorTileEntity>
 
 		if (tileEntity.getMovement() != null)
 		{
-			Animation<?>[] anims = tileEntity.getMovement().getAnimations(tileEntity, model, rp);
+			Animation<?>[] anims = animationPlans.get(tileEntity, model, rp);
 			ar.animate(anims);
 		}
 

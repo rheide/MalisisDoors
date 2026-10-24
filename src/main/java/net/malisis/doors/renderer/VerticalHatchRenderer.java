@@ -40,6 +40,8 @@ import net.minecraft.util.ResourceLocation;
  */
 public class VerticalHatchRenderer extends DoorRenderer
 {
+    private final net.malisis.doors.renderer.DoorAnimationPlans animationPlans = new net.malisis.doors.renderer.DoorAnimationPlans();
+
 
 	public VerticalHatchRenderer()
 	{
@@ -86,7 +88,7 @@ public class VerticalHatchRenderer extends DoorRenderer
 
 		if (tileEntity.getMovement() != null)
 		{
-			Animation<?>[] anims = tileEntity.getMovement().getAnimations(tileEntity, model, rp);
+			Animation<?>[] anims = animationPlans.get(tileEntity, model, rp);
 			ar.animate(anims);
 		}
 

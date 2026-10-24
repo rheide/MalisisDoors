@@ -60,6 +60,8 @@ import net.minecraft.util.EnumFacing;
 
 public class DoorRenderer extends MalisisRenderer<DoorTileEntity>
 {
+    private final net.malisis.doors.renderer.DoorAnimationPlans animationPlans = new net.malisis.doors.renderer.DoorAnimationPlans();
+
 	protected EnumFacing direction;
 	protected boolean opened;
 	protected boolean hingeLeft;
@@ -207,7 +209,7 @@ public class DoorRenderer extends MalisisRenderer<DoorTileEntity>
 		List<ITransformable> toRender = new ArrayList<>();
 		if (tileEntity.getMovement() != null)
 		{
-			Animation<?>[] anims = tileEntity.getMovement().getAnimations(tileEntity, model, rp);
+			Animation<?>[] anims = animationPlans.get(tileEntity, model, rp);
 			toRender = ar.animate(anims);
 			if (!ArrayUtils.isEmpty(anims) && toRender.size() == 0)
 				return;

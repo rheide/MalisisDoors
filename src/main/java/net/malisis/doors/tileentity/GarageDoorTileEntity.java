@@ -68,19 +68,20 @@ public class GarageDoorTileEntity extends DoorTileEntity
 
 	public boolean isTop(BlockPos pos)
 	{
-		return getTopDoor() == this;
+		return getDoor(EnumFacing.UP) == null;
 	}
 
 	@Override
 	public int getOpeningTime()
 	{
-		return getTopDoor().getDoors().size() * maxOpenTime;
+		return getTopDoor().getDoorCount() * maxOpenTime;
 	}
 
 	public GarageDoorTileEntity getTopDoor()
 	{
-		GarageDoorTileEntity te = getDoor(EnumFacing.UP);
-		return te != null ? te.getTopDoor() : this;
+		GarageDoorTileEntity top = this, next;
+        while ((next = top.getDoor(EnumFacing.UP)) != null) top = next;
+        return top;
 	}
 
 	@Override
@@ -99,8 +100,16 @@ public class GarageDoorTileEntity extends DoorTileEntity
 		if (dir.getAxis() != Axis.Y)
 			return te;
 
-		return te.isPowered() == te.isPowered() && te.getState() == getState() ? te : null;
+		// The previous power comparison read the same tile twice and was always true.
+        return te.getState() == getState() ? te : null;
 	}
+
+    private int getDoorCount()
+    {
+        int count = 0;
+        for (GarageDoorTileEntity tile = this; tile != null; tile = tile.getDoor(EnumFacing.DOWN)) count++;
+        return count;
+    }
 
 	public Set<GarageDoorTileEntity> getDoors()
 	{
@@ -164,8 +173,8 @@ public class GarageDoorTileEntity extends DoorTileEntity
 	@Override
 	public AxisAlignedBB getRenderBoundingBox()
 	{
-		Set<GarageDoorTileEntity> childDoors = getDoors();
-		return AABBUtils.identity(pos).grow(childDoors.size(), childDoors.size(), childDoors.size());
+		int count = getDoorCount();
+        return AABBUtils.identity(pos).grow(count, count, count);
 	}
 
 }

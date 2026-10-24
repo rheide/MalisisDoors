@@ -48,6 +48,8 @@ import net.minecraft.util.EnumFacing.Axis;
  */
 public class FenceGateRenderer extends MalisisRenderer<FenceGateTileEntity>
 {
+    private final net.malisis.doors.renderer.DoorAnimationPlans animationPlans = new net.malisis.doors.renderer.DoorAnimationPlans();
+
 	private MalisisModel model;
 	private RenderParameters rp;
 	protected AnimationRenderer ar = new AnimationRenderer();
@@ -172,14 +174,11 @@ public class FenceGateRenderer extends MalisisRenderer<FenceGateTileEntity>
 
 	protected void renderTileEntity()
 	{
-		initParams();
 		ar.setStartTime(tileEntity.getTimer().getStart());
-
-		setup();
 
 		if (tileEntity.getMovement() != null)
 		{
-			Animation<?>[] anims = tileEntity.getMovement().getAnimations(tileEntity, model, rp);
+			Animation<?>[] anims = animationPlans.get(tileEntity, model, rp);
 			ar.animate(anims);
 		}
 

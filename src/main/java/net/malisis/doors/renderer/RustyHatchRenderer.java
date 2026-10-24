@@ -55,6 +55,8 @@ import net.minecraft.util.ResourceLocation;
  */
 public class RustyHatchRenderer extends MalisisRenderer<RustyHatchTileEntity>
 {
+    private final net.malisis.doors.renderer.DoorAnimationPlans animationPlans = new net.malisis.doors.renderer.DoorAnimationPlans();
+
 	public static RustyHatchRenderer instance;
 	private ResourceLocation rl;
 	private MalisisModel model;
@@ -176,7 +178,7 @@ public class RustyHatchRenderer extends MalisisRenderer<RustyHatchTileEntity>
 
 		if (tileEntity.getMovement() != null)
 		{
-			Animation<?>[] anims = tileEntity.getMovement().getAnimations(tileEntity, model, rp);
+			Animation<?>[] anims = animationPlans.get(tileEntity, model, rp);
 			ar.animate(anims);
 		}
 

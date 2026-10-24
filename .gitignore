@@ -9,3 +9,5 @@ bin/*
 gradle.properties
 init.gradle
 /libs
+
+/logs/

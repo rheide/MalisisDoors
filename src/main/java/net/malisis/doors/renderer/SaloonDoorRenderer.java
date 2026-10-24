@@ -38,6 +38,8 @@ import net.minecraft.util.ResourceLocation;
  */
 public class SaloonDoorRenderer extends DoorRenderer
 {
+    private final net.malisis.doors.renderer.DoorAnimationPlans animationPlans = new net.malisis.doors.renderer.DoorAnimationPlans();
+
 	public SaloonDoorRenderer()
 	{
 		super(false);
@@ -69,7 +71,7 @@ public class SaloonDoorRenderer extends DoorRenderer
 
 		if (tileEntity.getMovement() != null)
 		{
-			Animation<?>[] anims = tileEntity.getMovement().getAnimations(tileEntity, model, rp);
+			Animation<?>[] anims = animationPlans.get(tileEntity, model, rp);
 			ar.animate(anims);
 		}
 
