@@ -14,7 +14,7 @@ The native release restores the original creative content and validates placemen
 - [x] Forcefield projector: selection/creation/toggle/removal, stored field identity, plane rendering and collision.
 - [x] Original sound families, recipes/loot/creative variants, translation conversion and configurable/native 3D item rendering.
 - [x] Focused live and automated checks for every family, multiblock teardown, persistence, reversals, reload and dedicated-server linkage.
-- [ ] Matched original/optimized 1.12.2 versus native 1.21.1 performance measurements with limitations.
-- [ ] Final JARs, hashes, source bundles and accurate feature/measurement reports in ~/LLMShareDrive.
+- [x] Matched original/optimized 1.12.2 versus native 1.21.1 performance measurements with limitations.
+- [x] Final JARs, hashes, source bundles and accurate feature/measurement reports in ~/LLMShareDrive.
 
-Validation checkpoint: 20,736 original-engine vertex comparisons, 19 Core contract checks, 4,322 dedicated-server checks, complete native client/menu/item/resource-reload checks, and 751 saved-world restart checks pass. Final matched measurement and packaging are the remaining release gates.
+Validation checkpoint: 20,736 original-engine vertex comparisons, 19 Core contract checks, 4,322 dedicated-server checks, complete native client/menu/item/resource-reload checks, and 751 saved-world restart checks pass. All 18 final matched phases completed with 3,240 frames and matching callback/vertex counts; final artifacts, hashes, source bundles and evidence accompany the release.

@@ -10,7 +10,7 @@ Vanilla doors, trapdoors and gates animate using their native models. The server
 
 Moving collision and ray selection share the render transforms. Displaced leaves remain clickable, intervening walls block clicks, and breaking a multiblock part clears its structure. Bounded meshes, cached topology and renderer-owned scratch poses reduce repeated work and allocation. Resource reload rebuilds texture-dependent caches.
 
-Build with Java 21: `./gradlew build --no-daemon`. The sibling `core-modern` is built as a separate dependency JAR. The build compares animation vertices against fixtures exported by the actual legacy engine. Additional opt-in client/server checks and matched performance measurements are documented in the accompanying release reports.
+Build with Java 21: `./gradlew build --no-daemon`. The sibling `core-modern` is built as a separate dependency JAR. The build compares animation vertices against fixtures exported by the actual legacy engine. Additional opt-in client/server checks are documented in [the feature and validation report](docs/PORT-STATUS-1.21.1.md); matched measurements and their limits are in [the performance report](docs/PERFORMANCE-COMPARISON.md).
 
 This is a native implementation, not a Forge 1.12.2 binary or a world conversion tool. The preserved registry names do not convert legacy chunk formats, block states or block-entity NBT automatically. The new Core supplies this port's native support and does not preserve the entire legacy Core API for other mods.
 
